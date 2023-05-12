@@ -1,0 +1,480 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+/* Seccion header */ 
+
+header{
+    background: rgb(49,19,77);
+    background: linear-gradient(90deg, rgb(79, 46, 110) 4%, rgb(65, 192, 199) 100%);
+}
+.logo-header{
+    width: 340px;
+    height: 72px;
+    margin: 7px;
+}
+li{
+    list-style: none;
+}
+a{
+   color: #fff;
+   text-decoration: none;
+}
+.navbar{
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.nav-branding{
+    font-size: 2rem;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: rgb(99, 58, 138);
+}
+.hamburguesa{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* Seccion 1 */
+
+main{
+    width: 100%;
+}
+.slider{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 500%;
+    animation: slider 20s infinite;
+}
+.slider li{
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+}
+.slider li img{
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    15% {margin-left: 0%;}
+
+    20% {margin-left: -100%;}
+    35% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    55% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    75% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    95% {margin-left: -400%;}
+}
+.section-1{
+    min-height: 125vh;
+    margin-bottom: 20px;
+}
+.slogan{
+    margin: 10px;
+    padding: 5px;
+    font-size: 28px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+
+}
+.about-us{
+    text-align: center;
+    font-weight: lighter;
+    margin: 0px 15px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.descripcion-empresa{
+    margin: 0px 20px;
+    padding: 25px;
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.descripcion-img{ 
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 15px 25px;
+    border-radius: 50%;
+}
+
+/* Seccion 2 */ 
+
+.section-2{
+    width: 100%;
+}
+.prop-generales{
+    text-align: center;
+    margin: 15px;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedor a{
+    margin: 10px 5px;
+}
+.contenedor figure{
+    position: relative;
+    height: 380px;
+    cursor: pointer;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.contenedor figure img{
+    object-fit: cover;
+    width: 301px;
+    height: 380px;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(97, 97, 97, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.descripcion-finish{
+    margin: 25px auto;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Seccion footer */ 
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background: rgb(49,19,77);
+    background: linear-gradient(90deg, rgb(79, 46, 110) 4%, rgb(65, 192, 199) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.iconos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 70px;
+    width: 250px;
+    margin: 8px 20px;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid rgb(172, 151, 206);
+    margin: 5px 15px;
+}
+.icon:hover{
+    opacity: 0.5;
+}
+.copyright{
+    color: #fff;
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+/* Seccion prop-gastronómicas */ 
+
+.main-prop{
+    width: 90%;
+    margin: 20px auto;
+}
+.card-prop {
+    position: relative;
+    background: rgb(250, 250, 250);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 5px;
+}
+.card-prop:hover {
+    box-shadow: 0 5px 15px rgba(148, 100, 160, 0.5);
+    transform: translateY(-10px);
+}
+.card-prop .head {
+    height: 115px;
+    width: 70%;
+    position: relative;
+}
+.card-prop .head .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(148, 100, 160, 0.5);
+    bottom: 0;
+}
+.card-prop .head .img {
+    position: absolute;
+    background: transparent;
+    padding: 5px;
+    top: 35%;
+    left: 40%;
+    font-size: 25px;
+}
+.card-prop .description {
+    display: inline-flex;
+    height: 185px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-prop .description p {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+.card-prop .contact{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-bodas{
+    text-decoration: none;
+    color: #fff;
+    background: rgba(148, 100, 160, 0.5);
+    border-radius: 5px;
+    transition: .3s;
+    margin: 5px 10px;
+}
+.card-prop .contact a {
+    width: 175px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(148, 100, 160, 0.5);
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.card-prop .contact a:hover {
+    background: rgba(207, 112, 231, 0.5);
+}
+ /* Seccion menus */
+
+ .descripcion{
+    text-align: center;
+    padding: 5px 25px;
+    color: rgb(53, 53, 53);
+}
+.card{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+.card__perfil{
+    width: 800px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 5px;
+    border-radius: 5px;
+    margin: 10px;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  /* Tamaño del scroll */
+.card__perfil::-webkit-scrollbar {
+    width: 7px;
+}  
+ /* Estilos barra (thumb) de scroll */
+.card__perfil::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+.card__perfil::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+.card__perfil::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+  /* Estilos track de scroll */
+.card__perfil::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 10px;
+}
+.card__perfil::-webkit-scrollbar-track:hover, 
+.container::-webkit-scrollbar-track:active {
+  background: #ececec;
+}
+.card__nombre{
+    text-align: center;
+    gap: 5px;
+}
+hr{
+    width: 100%;
+    height: 4px;
+    background: rgb(223, 221, 221);
+    margin: 20px 5px;
+}
+.span-precio{
+    display: flex;
+    justify-content: center;
+}
+
+                        /***************** SECCION BODAS *******************/ 
+.prop-bodas {
+position: absolute;
+top: 15%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+}
+
+.boda-banner {
+width: 100%;
+height: 80vh;
+object-fit: cover;
+}
+                                          
+
+
+
+
+
+
+@media(max-width: 1020px){
+    .card{
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+@media(max-width:768px){
+    .hamburguesa{
+        display: block;
+    }
+    .hamburguesa.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguesa.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguesa.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background: rgb(49,19,77);
+        background: linear-gradient(90deg, rgb(79, 46, 110) 4%, rgb(65, 192, 199) 100%);
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .nav-link{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+        padding: 10px;
+        z-index: 99;
+    }
+    .card-prop{
+        display: block;
+    }
+    .card-prop .contact {
+        width: unset;
+    }
+
+}

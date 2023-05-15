@@ -2,10 +2,18 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;    
+    padding: 0;
+}
+.icon-fixed{
+    width: 35px;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 8px;
 }
 
-/* Seccion header */ 
+                        /***************** SECCION HEADER *******************/ 
 
 header{
     background: rgb(49,19,77);
@@ -60,7 +68,7 @@ a{
     background-color: white;
 }
 
-/* Seccion 1 */
+                        /***************** SECCION 1 *******************/ 
 
 main{
     width: 100%;
@@ -139,7 +147,7 @@ main{
     border-radius: 50%;
 }
 
-/* Seccion 2 */ 
+                        /***************** SECCION 2 *******************/ 
 
 .section-2{
     width: 100%;
@@ -221,8 +229,7 @@ main{
 }
 
 
-/* Seccion footer */ 
-
+                        /***************** SECCION FOOTER *******************/ 
 footer{
     width: 100%;
     padding: 20px;
@@ -231,7 +238,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .iconos-container{
     display: flex;
@@ -247,11 +253,9 @@ footer{
 }
 
 .icon{
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    border: 1px solid rgb(172, 151, 206);
-    margin: 5px 15px;
+    height: 45px;
+    width: 45px;
+    margin: 10px 15px;
 }
 .icon:hover{
     opacity: 0.5;
@@ -262,7 +266,7 @@ footer{
     margin: 5px 10px;
 }
 
-/* Seccion prop-gastronómicas */ 
+                        /***************** SECCION PROPUESTAS *******************/ 
 
 .main-prop{
     width: 90%;
@@ -347,86 +351,63 @@ footer{
 .card-prop .contact a:hover {
     background: rgba(207, 112, 231, 0.5);
 }
- /* Seccion menus */
+                        /***************** SECCION SALONES  ****************** */
 
- .descripcion{
+.galeria h1{
     text-align: center;
-    padding: 5px 25px;
-    color: rgb(53, 53, 53);
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}                        
+.linea{
+    border-top: 5px solid rgb(81, 47, 95);
+    margin-bottom: 20px;
 }
-.card{
+.contenedor-imagenes{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.contenedor-imagenes .imagen{
+    width: 30%;
+    position: relative;
+    height: 450px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
     width: 100%;
-    display: inline-flex;
-    justify-content: center;
+    height:100%;
+    object-fit: cover;
 }
-.card__perfil{
-    width: 800px;
-    padding: 20px;
-    box-shadow: 1px 1px 5px rgb(201, 201, 201);
-    border: solid rgba(3, 133, 255, 0) 5px;
-    border-radius: 5px;
-    margin: 10px;
-    height: 500px;
-    overflow-y: auto;
-    overflow-x: hidden;
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(122, 0, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    opacity: 0.2;
 }
-  /* Tamaño del scroll */
-.card__perfil::-webkit-scrollbar {
-    width: 7px;
-}  
- /* Estilos barra (thumb) de scroll */
-.card__perfil::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-  }
-.card__perfil::-webkit-scrollbar-thumb:active {
-    background-color: #999999;
-}
-.card__perfil::-webkit-scrollbar-thumb:hover {
-    background: #d1d1d1;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-  /* Estilos track de scroll */
-.card__perfil::-webkit-scrollbar-track {
-    background: #e1e1e1;
-    border-radius: 10px;
-}
-.card__perfil::-webkit-scrollbar-track:hover, 
-.container::-webkit-scrollbar-track:active {
-  background: #ececec;
-}
-.card__nombre{
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:28x;
+    position: absolute;
+    top: 50%;
+    left:50%;
     text-align: center;
-    gap: 5px;
+    transform: translate(-50%, -50%);
+    line-height: 1.7;
 }
-hr{
-    width: 100%;
-    height: 4px;
-    background: rgb(223, 221, 221);
-    margin: 20px 5px;
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
 }
-.span-precio{
-    display: flex;
-    justify-content: center;
-}
-
-                        /***************** SECCION BODAS *******************/ 
-.prop-bodas {
-position: absolute;
-top: 15%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 1;
-}
-
-.boda-banner {
-width: 100%;
-height: 80vh;
-object-fit: cover;
-}
-                                          
-
-
 
 
 

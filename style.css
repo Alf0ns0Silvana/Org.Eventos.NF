@@ -68,7 +68,7 @@ a{
     background-color: white;
 }
 
-                        /***************** SECCION 1 *******************/ 
+                        /***************** SECCION 1 HOME *******************/ 
 
 main{
     width: 100%;
@@ -147,7 +147,7 @@ main{
     border-radius: 50%;
 }
 
-                        /***************** SECCION 2 *******************/ 
+                        /***************** SECCION 2 HOME *******************/ 
 
 .section-2{
     width: 100%;
@@ -231,7 +231,6 @@ main{
     width: 24px;
     margin-bottom: 8px;
 }
-
 .iconos-container{
     width: auto;
     display: flex;
@@ -239,7 +238,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-
 .icon{
     height: 40px;
     margin-right: 50px;
@@ -263,7 +261,6 @@ footer{
     width: 250px;
     margin: 8px 20px;
 }
-
 .copyright{
     color: #fff;
     font-size: 15px;
@@ -362,10 +359,6 @@ footer{
     margin: 20px 0 15px 0;
     font-weight: 300;
 }                        
-.linea{
-    border-top: 5px solid rgb(81, 47, 95);
-    margin-bottom: 20px;
-}
 .contenedor-imagenes{
     display:flex;
     width: 90%;
@@ -412,6 +405,95 @@ footer{
     height:100%;
     cursor: pointer;
 }
+
+                        /***************** SECCION ALQUILERES  ****************** */
+
+.title-alquileres{
+    position: relative;
+    animation: aparecer 1s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+}
+
+@keyframes aparecer {
+    0% {
+      transform: translateX(100%); /* ese es el titulo*/
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+.imgs-alq {
+    width: 500px;
+    height: 350px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.caja {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 1px 1px 5px rgb(218, 206, 206);
+    border: solid rgba(22, 22, 22, 0) 10px;
+    width: 60%;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenido {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+} 
+.descrip-alq {
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.title-alq {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.caja:nth-child(1),
+.caja:nth-child(3) {
+    animation: aparecer-izquierda 2s;
+}
+.caja:nth-child(2),
+.caja:nth-child(4) {
+    animation: aparecer-derecha 2s;
+} 
+@keyframes aparecer-izquierda {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+  
+@keyframes aparecer-derecha {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% { 
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.caja:last-child {
+    animation: aparecer-izquierda 2s;
+}
+
 
 
 

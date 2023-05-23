@@ -365,13 +365,14 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 3px;
+    
 }
 .contenedor-imagenes .imagen{
-    width: 30%;
+    width: 48%;
     position: relative;
     height: 450px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+    margin: 10px 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
 }
 .imagen img{
     width: 100%;
@@ -426,7 +427,7 @@ footer{
     text-decoration: underline;
 }
 .container {
-    width: 80%;
+    width: 95%;
     max-width: 1600px;
     margin: 50px auto;
     display: flex;
@@ -513,6 +514,7 @@ footer{
       display: flex;
       flex-wrap: wrap;
     }
+
     .iconos-container{
         margin: 0px;
     }
@@ -525,7 +527,22 @@ footer{
     .slider li img{
         height: 60vh;
     }
+    .evento{
+        height: 50vh;
+    }
+    .foto img{
+        height: 48vh;
+    }
+    .contenedor-descripcion{ /*alqui */
+        line-height: 1.5;
+        font-size: 18px;
+        width: 50%;
+    }
+    .contenedor-imagenes .imagen { /* salones */
+        width: 90%;
+    }
 }
+
 @media(max-width:768px){
     .hamburguesa{
         display: block;
@@ -559,6 +576,21 @@ footer{
         padding: 10px;
         z-index: 99;
     }
+    .descripcion-img{
+        float: unset;
+        display: flex;
+        margin: auto;
+    }
+    .contenedor figure .capa{
+        visibility: unset;
+        opacity: 0.9;
+        background-color: rgba(73, 67, 67, 0.7);
+    }
+    .contenedor figure .capa h3{
+        margin-bottom: 42px;
+        margin-top: 50px;
+        font-size: 22px;
+    }
     .card-prop{
         display: block;
     }
@@ -574,6 +606,27 @@ footer{
     .slider li img{
         height: 40vh;
     }
-
-
+    .contenedor-imagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-imagenes .imagen{
+        width: 85%;
+        height: 35vh;
+    }
+    .evento{
+        height: 30vh;
+    }
+    .foto img {
+        height: 28vh;
+    }
+    .contenedor-descripcion{
+        line-height: unset;
+        font-size: 17px;
+        width: 35%
+    }
+    .subtitle-alq{
+        margin-bottom: 12px;
+    }
 }

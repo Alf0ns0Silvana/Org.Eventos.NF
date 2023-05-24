@@ -73,7 +73,7 @@ main{
 }
 .slider{
     width: 100%;
-    height: 835px;
+    height: 430px;
     overflow: hidden;
 }
 .slider ul{
@@ -368,7 +368,7 @@ footer{
     
 }
 .contenedor-imagenes .imagen{
-    width: 48%;
+    width: 47%;
     position: relative;
     height: 450px;
     margin: 10px 10px;
@@ -522,10 +522,10 @@ footer{
         margin: 0px 20px;
     }
     .slider{
-        height: 530px;
+        height: 430px;
     }
     .slider li img{
-        height: 60vh;
+        height: 80vh;
     }
     .evento{
         height: 50vh;
@@ -601,10 +601,10 @@ footer{
         margin: 0px 20px;
     }
     .slider{
-        height: 360px;
+        height: 265px;
     }
     .slider li img{
-        height: 40vh;
+        height: 50vh;
     }
     .contenedor-imagenes{
         display: flex;
@@ -613,18 +613,20 @@ footer{
     }
     .contenedor-imagenes .imagen{
         width: 85%;
-        height: 35vh;
+        height: 50vh;
     }
     .evento{
-        height: 30vh;
+        height: 65vh;
     }
     .foto img {
-        height: 28vh;
+        height: 61vh;
     }
     .contenedor-descripcion{
         line-height: unset;
-        font-size: 17px;
-        width: 35%
+        font-size: 15px;
+        width: 35%;
+        height: 75vh;
+        
     }
     .subtitle-alq{
         margin-bottom: 12px;

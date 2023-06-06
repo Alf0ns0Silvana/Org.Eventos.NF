@@ -1,5 +1,5 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'EB Garamond', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 8px;
+    margin:auto;
 }
 
                         /***************** SECCION HEADER *******************/ 
@@ -37,7 +37,7 @@ a{
     padding: 0 24px;
 }
 .nav-menu{
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ a{
     transition: 0.7s ease;
 }
 .nav-link:hover{
-    color: rgb(99, 58, 138);
+    color: rgb(58, 52, 63);
 }
 .hamburguesa{
     display: none;
@@ -73,7 +73,7 @@ main{
 }
 .slider{
     width: 100%;
-    height: 430px;
+    height: 520px;
     overflow: hidden;
 }
 .slider ul{
@@ -89,7 +89,7 @@ main{
 }
 .slider li img{
     width: 100%;
-    height: 88vh;
+    height: 80vh;
 }
 
 @keyframes slider {
@@ -115,7 +115,7 @@ main{
 .slogan{
     margin: 10px;
     padding: 5px;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: lighter;
     font-style: italic;
     text-align: center;
@@ -132,7 +132,7 @@ main{
 .descripcion-empresa{
     margin: 0px 20px;
     padding: 25px;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: lighter;
     line-height: 1.6;
 }
@@ -200,7 +200,7 @@ main{
 .contenedor figure:hover > .capa h3{
     margin-top: 70px;
     margin-bottom: 15px;
-    font-size: 23px;
+    font-size: 25px;
 }
 .contenedor figure:hover > img{
     transform: scale(1.3);
@@ -221,9 +221,9 @@ main{
     margin: auto;
 }
 .descripcion-finish{
-    margin: 25px auto;
-    font-size: 20px;
-    line-height: 1.6;
+    margin: 25px 10px;
+    font-size: 23px;
+  /*  line-height: 1.6; */
     text-align: center;
 }
 .arrow{
@@ -246,24 +246,39 @@ main{
 }
                         /***************** SECCION FOOTER *******************/ 
 footer{
-    margin-top: 50px;
+    margin-top: 35px;
     width: 100%;
     padding: 20px;
     background: rgb(49,19,77);
     background: linear-gradient(90deg, rgb(79, 46, 110) 4%, rgb(65, 192, 199) 100%);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 .logo{
-    height: 70px;
-    width: 250px;
-    margin: 8px 20px;
+    height: 65px;
+    width: 245px;
 }
 .copyright{
     color: #fff;
-    font-size: 15px;
-    margin: 5px 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+.nav-footer{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-link-foot{
+    padding: 10px;
+}
+.nav-link-foot:hover{
+    transition: 0.7s ease;
+    color: rgb(58, 52, 63);
 }
 
                         /***************** SECCION PROPUESTAS *******************/ 
@@ -271,6 +286,10 @@ footer{
 .main-prop{
     width: 85%;
     margin: 20px auto;
+}
+.tittle-menu{
+    margin-bottom: 20px;
+    font-weight: 300;
 }
 .card-prop {
     position: relative;
@@ -285,31 +304,32 @@ footer{
     border: solid rgba(3, 133, 255, 0) 5px;
 }
 .card-prop:hover {
-    box-shadow: 0 5px 15px rgba(148, 100, 160, 0.5);
+    box-shadow: 0 5px 15px rgba(107, 107, 107, 0.5);
     transform: translateY(-10px);
 }
 .card-prop .head {
     height: 115px;
-    width: 70%;
+    width: 35%;
     position: relative;
 }
 .card-prop .head .circle {
     position: absolute;
-    width: 300px;
+    width: 325px;
     height: 300px;
     border-radius: 50%;
-    background: rgba(148, 100, 160, 0.5);
+    background: linear-gradient(90deg, rgb(79, 46, 110) 4%, rgb(65, 192, 199) 100%);
     bottom: 0;
 }
 .card-prop .head .img {
     position: absolute;
     background: transparent;
     padding: 5px;
-    top: 35%;
-    left: 40%;
-    font-size: 25px;
+    top: 20%;
+    left: 25%;
+    font-size: 23px;
 }
 .card-prop .description {
+    font-size: 22px;
     display: inline-flex;
     height: 185px;
     width: 100%;
@@ -320,7 +340,8 @@ footer{
 .card-prop .description p {
     margin-top: 20px;
     margin-left: 25px;
-    font-size: 16px;
+    font-size: 19px;
+    z-index: 10;
 }
 .card-prop .contact{
     width: 40%;
@@ -328,28 +349,28 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 .contact-bodas{
     text-decoration: none;
     color: #fff;
-    background: rgba(148, 100, 160, 0.5);
     border-radius: 5px;
     transition: .3s;
     margin: 5px 10px;
 }
 .card-prop .contact a {
-    width: 175px;
+    font-size: 18px;
+    width: 136px;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    background: rgba(148, 100, 160, 0.5);
-    padding: 15px 20px;
+    background: linear-gradient(90deg, rgb(65, 192, 199), rgb(79, 46, 110)  100%);
+    padding: 5px 8px;
     border-radius: 5px;
     transition: .3s;
 }
 .card-prop .contact a:hover {
-    background: rgba(207, 112, 231, 0.5);
+    transition: 0.7s ease;
+    color: rgb(46, 43, 49);
 }
                         /***************** SECCION SALONES  ****************** */
 
@@ -383,7 +404,7 @@ footer{
     position: absolute;
     bottom: 0;
     left: 0;
-    background:rgba(130, 57, 172, 0.781) ;
+    background:rgb(25 24 26 / 78%) ;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -407,11 +428,18 @@ footer{
 }
 
                         /***************** SECCION ALQUILERES  ****************** */
+
 .title-alquileres{
     margin-top: 15px;
     position: relative;
     animation: aparecer 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
+}
+.title-alquileres h1 {
+    font-weight: 300;
+}
+.subtitle-alq{
+    font-weight: 300;
 }
 @keyframes aparecer {
     0% {
@@ -423,15 +451,13 @@ footer{
     opacity: 1;
     }
 }
-.subtitle-alq{
-    text-decoration: underline;
-}
 .container {
     width: 95%;
     max-width: 1600px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
 }
 .container::after {
@@ -445,9 +471,10 @@ footer{
     z-index: 1;
 }
 .evento {
-    display: flex;
+    flex-direction: row;
+    display: flex; 
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     position: relative;
     height: 65vh;
 }
@@ -457,7 +484,7 @@ footer{
     width: 14px;
     height: 14px;
     border-radius: 100px;
-    background: #DCDFD9;
+    background: linear-gradient(90deg, rgb(79, 46, 110) 4%, rgb(65, 192, 199) 100%);
     border: 2px solid #1b3231;
     position: absolute;
     z-index: 2;
@@ -465,35 +492,29 @@ footer{
     left: calc(50% - 9px);
 }
 .contenedor-descripcion{
+    width: 45%;
     font-size: 20px;
     line-height: 1.6;
-    width: 45%;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
 }
 .foto {
     object-fit: cover;
     width: 45%;
     border: 10px solid #fff;
     position: relative;
-    box-shadow: rgb(151, 149, 149) 0px 7px 29px 0px;
-}
-.foto::after {
-    content: "";
-    display: block;
-    border: 20px solid transparent;
-    border-left: 20px solid #fff;
-    position: absolute;
-    right: -50px;
-    top: calc(50% - 20px);
 }
 .foto img {
+    border-radius: 5px;
     width: 100%;
     height: 62vh;
     vertical-align: top;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.85);
 }
 .evento:nth-child(even) {
     flex-direction: row-reverse;
@@ -510,6 +531,22 @@ footer{
 }
 
 @media(max-width: 1020px){
+    .logo-header{ 
+        width: 285px;
+        height: 67px;
+        margin: 5px auto;
+    }
+    .nav-menu {
+        font-size: 18px;
+        gap: 15px;
+    }
+    .navbar{
+        padding: 0px 15px;
+    }
+
+    .nav-branding {
+        font-size: 4rem;
+    }
     .card{
       display: flex;
       flex-wrap: wrap;
@@ -522,18 +559,50 @@ footer{
         margin: 0px 20px;
     }
     .slider{
-        height: 430px;
+        height: 453px;
     }
     .slider li img{
         height: 80vh;
     }
+    .slogan{
+        font-size: 25px;
+    }
+    .about-us {
+        font-size: 20px;
+    }
+    .descripcion-img {
+        width: 190px;
+        height: 215px;
+        margin: 20px 15px;
+    }
+    .descripcion-empresa {
+        font-size: 18px;
+    }
+    .descripcion-finish {
+        font-size: 21px;
+    }
+                            /* FOOTER */
+    .nav-footer {
+        font-size: 17px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+                            /* ALQUILERES */
     .evento{
-        height: 50vh;
+        height: auto;
     }
     .foto img{
         height: 48vh;
     }
-    .contenedor-descripcion{ /*alqui */
+    .card-prop .head{
+        width: 50%;
+    }
+    .card-prop .description{
+        z-index: 10;
+    }
+    .contenedor-descripcion{ /* alquileres */
         line-height: 1.5;
         font-size: 18px;
         width: 50%;
@@ -544,8 +613,10 @@ footer{
 }
 
 @media(max-width:768px){
+    
     .hamburguesa{
         display: block;
+        margin: 0px 5px;
     }
     .hamburguesa.active .bar:nth-child(2){
         opacity: 0;
@@ -601,7 +672,7 @@ footer{
         margin: 0px 20px;
     }
     .slider{
-        height: 265px;
+        height: 270px;
     }
     .slider li img{
         height: 50vh;
@@ -612,23 +683,145 @@ footer{
         align-items: center;
     }
     .contenedor-imagenes .imagen{
-        width: 85%;
+        width: 100%;
         height: 50vh;
+        margin: 5px auto;
     }
     .evento{
-        height: 65vh;
+        gap: 30px;
+        height: 33vh;
+    }
+    .foto{
+        border:unset;
+        box-shadow: unset;
+        width: 47%;
     }
     .foto img {
-        height: 61vh;
+        height: 45vh;
+        border-radius: 15px;
+        width: 100%;
+        margin-top: 25px;
     }
     .contenedor-descripcion{
         line-height: unset;
-        font-size: 15px;
-        width: 35%;
-        height: 75vh;
-        
+        font-size: 14px;
+        width: 48%;
+        height: 45vh;
     }
     .subtitle-alq{
         margin-bottom: 12px;
     }
+    .overlay{
+        position: unset;
+        opacity: 1;
+    }
+    .overlay h2{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .main-alq{
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media (max-width:320px){
+    
+    .icon-fixed img{
+        height: 35px;
+        padding-right: 15px;
+    }
+
+    .logo-header{ 
+        width: 229px;
+        height: 55px;
+        margin: 5px auto;
+    }
+    .nav-menu {
+        font-size: 15px;
+    }
+    .nav-branding {
+        font-size: 4rem;
+    }
+    .slogan{
+        font-size: 22px;
+    }
+    .about-us {
+        font-size: 18px;
+    }
+    .descripcion-img {
+        width: 200px;
+        height: 200px;
+    }
+    .descripcion-empresa {
+        font-size: 18px;
+    }
+    .contenedor {
+        margin: auto;
+    }
+    .descripcion-finish {
+        font-size: 20px;
+    }
+    .nav-footer {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 13px;
+    }
+
+                           /* SALONES */
+    
+    .galeria h1 {
+        font-size: 22px;
+    }
+     
+                            /* MENÚS */
+
+    .card-prop .head .img {
+        font-size: 20px;
+    }
+    .card-prop .description{
+        font-size: 19px;
+    }
+    .card-prop .description p {
+        font-size: 17px;
+        margin-left: auto;
+    }
+    .card-prop .contact a {
+        font-size: 16px;
+    }
+
+                            /*  ALQUILERES */
+    
+    .title-alquileres{    
+        font-size: 13px;
+    }
+    .foto img {
+        margin: 40px auto;
+        height: 145px;
+        border-radius: 100px;
+        width: 135px;
+    }
+    .container {
+        width: 95%;
+        margin-top: 60px;
+    }
+    .evento {
+        gap: 30px;
+        height: 40vh;
+    }
+    .evento::after{
+        display: none;
+    }
+    .container::after {
+        display: none;
+    }
+    .contenedor-descripcion {
+        line-height: unset;
+        font-size: 14px;
+        width: 60%;
+        margin-top: 20px;
+        height: auto;
+    }
+
 }

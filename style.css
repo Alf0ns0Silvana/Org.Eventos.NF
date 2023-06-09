@@ -109,7 +109,7 @@ main{
     95% {margin-left: -400%;}
 }
 .section-1{
-    min-height: 125vh;
+ /*   min-height: 125vh; */
     margin-bottom: 20px;
 }
 .slogan{
@@ -436,6 +436,7 @@ footer{
     text-align: center;
 }
 .title-alquileres h1 {
+    margin: 10px 5px;
     font-weight: 300;
 }
 .subtitle-alq{
@@ -474,7 +475,7 @@ footer{
     flex-direction: row;
     display: flex; 
     justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
     position: relative;
     height: 65vh;
 }
@@ -530,7 +531,7 @@ footer{
     left: -50px;
 }
 
-@media(max-width: 1020px){
+@media(max-width: 1200px){
     .logo-header{ 
         width: 285px;
         height: 67px;
@@ -594,6 +595,7 @@ footer{
         height: auto;
     }
     .foto img{
+        margin-top: 25px;
         height: 48vh;
     }
     .card-prop .head{
@@ -612,7 +614,7 @@ footer{
     }
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
     
     .hamburguesa{
         display: block;
@@ -675,7 +677,7 @@ footer{
         height: 270px;
     }
     .slider li img{
-        height: 50vh;
+        height: 27vh;
     }
     .contenedor-imagenes{
         display: flex;
@@ -688,8 +690,8 @@ footer{
         margin: 5px auto;
     }
     .evento{
-        gap: 30px;
-        height: 33vh;
+        gap: 50px;
+
     }
     .foto{
         border:unset;
@@ -697,7 +699,7 @@ footer{
         width: 47%;
     }
     .foto img {
-        height: 45vh;
+        height: 25vh;
         border-radius: 15px;
         width: 100%;
         margin-top: 25px;
@@ -706,7 +708,7 @@ footer{
         line-height: unset;
         font-size: 14px;
         width: 48%;
-        height: 45vh;
+        height: 25vh;
     }
     .subtitle-alq{
         margin-bottom: 12px;
@@ -725,7 +727,7 @@ footer{
     }
 }
 
-@media (max-width:320px){
+@media (max-width:600px){
     
     .icon-fixed img{
         height: 35px;
@@ -735,7 +737,7 @@ footer{
     .logo-header{ 
         width: 229px;
         height: 55px;
-        margin: 5px auto;
+        margin: 0px auto;
     }
     .nav-menu {
         font-size: 15px;
@@ -785,7 +787,7 @@ footer{
     }
     .card-prop .description p {
         font-size: 17px;
-        margin-left: auto;
+        margin: auto; 
     }
     .card-prop .contact a {
         font-size: 16px;
@@ -804,11 +806,10 @@ footer{
     }
     .container {
         width: 95%;
-        margin-top: 60px;
+        margin-top: 20px;
     }
     .evento {
         gap: 30px;
-        height: 40vh;
     }
     .evento::after{
         display: none;
@@ -819,9 +820,15 @@ footer{
     .contenedor-descripcion {
         line-height: unset;
         font-size: 14px;
-        width: 60%;
+        width: 65%;
         margin-top: 20px;
         height: auto;
     }
 
+}
+
+@media (max-width:320px){ 
+    .slider {
+        height: 153px;
+    }
 }

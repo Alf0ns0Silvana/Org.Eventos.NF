@@ -727,6 +727,9 @@ footer{
         width: 85%;
         margin: auto;
     }
+    .imagen:hover .overlay{
+        height:0%;
+    }
 }
 
 @media (max-width:600px){
